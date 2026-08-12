@@ -73,7 +73,7 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="absolute bottom-8 right-8 z-10 hidden items-center gap-3 text-sm font-bold text-text md:flex">
+      <div className="absolute bottom-10 right-10 z-10 hidden items-center gap-3 text-sm font-bold text-text md:flex">
         <span>SCROLL</span>
         <span className="text-2xl text-primary">→</span>
       </div>

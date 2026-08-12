@@ -76,7 +76,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             aria-label="GitHub"
             className="nav-button hidden h-9 w-9 items-center justify-center rounded-full border border-secondary bg-background text-text transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-primary hover:text-background active:scale-95 sm:h-10 sm:w-10 md:flex">
-            <RiGithubLine size={20} />
+            <RiGithubLine size={30} />
           </a>
 
           <a
@@ -85,7 +85,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             aria-label="LinkedIn"
             className="nav-button hidden h-9 w-9 items-center justify-center rounded-full border border-secondary bg-background text-text transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-primary hover:text-background active:scale-95 sm:h-10 sm:w-10 md:flex">
-            <RiLinkedinBoxLine size={20} />
+            <RiLinkedinBoxLine size={30} />
           </a>
 
           <button
