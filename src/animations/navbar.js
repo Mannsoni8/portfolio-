@@ -25,7 +25,6 @@ export const navAni = () => {
         ".nav-button",
         {
           scale: 0.8,
-          opacity: 0,
           duration: 0.5,
           stagger: 0.08,
           ease: "back.out(1.7)",

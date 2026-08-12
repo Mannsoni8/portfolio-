@@ -21,10 +21,6 @@ const Navbar = () => {
     };
 
     window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   const closeMenu = () => {
@@ -33,7 +29,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed left-0 top-0 z-50 w-full px-3 py-3 sm:px-4 sm:py-4 md:px-6 md:py-5">
-      <div className=" relative mx-auto flex w-full max-w-7xl items-center justify-between rounded-2xl bg-surface/95 px-4 py-3 shadow-lg backdrop-blur-md sm:px-5 sm:py-3.5 md:px-6 md:py-4">
+      <div className="relative mx-auto flex w-full max-w-7xl items-center justify-between rounded-2xl bg-surface/95 px-4 py-3 shadow-lg backdrop-blur-md sm:px-5 sm:py-3.5 md:px-6 md:py-4">
         <a
           href="#home"
           onClick={closeMenu}
@@ -67,34 +63,31 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="flex items-center gap-1.5 sm:gap-2">
+        <div className="flex items-center gap-2">
           <a
             href="#contact"
-            className="nav-button hidden rounded-full bg-primary px-4 py-2 text-sm font-extrabold text-background transition-all duration-300 hover:scale-105 hover:bg-text active:scale-95 sm:px-5 sm:py-2.5 sm:text-base md:inline-flex">
+            className="nav-button hidden items-center rounded-full bg-primary px-4 py-2 text-sm font-extrabold text-background transition-all duration-300 hover:scale-105 hover:bg-text active:scale-95 sm:px-5 sm:py-2.5 sm:text-base md:inline-flex">
             Contact Me
           </a>
 
-          {/* GitHub */}
           <a
             href="https://github.com/Mannsoni8"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="nav-button hidden h-9 w-9 items-center justify-center rounded-full border border-secondary bg-background text-text transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-primary hover:text-background active:scale-95 sm:h-10 sm:w-10 md:inline-flex">
+            className="nav-button hidden h-9 w-9 items-center justify-center rounded-full border border-secondary bg-background text-text transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-primary hover:text-background active:scale-95 sm:h-10 sm:w-10 md:flex">
             <RiGithubLine size={20} />
           </a>
 
-          {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/mann-soni-6a5182268/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="nav-button hidden h-9 w-9 items-center justify-center rounded-full border border-secondary bg-background text-text transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-primary hover:text-background active:scale-95 sm:h-10 sm:w-10 md:inline-flex">
+            className="nav-button hidden h-9 w-9 items-center justify-center rounded-full border border-secondary bg-background text-text transition-all duration-300 hover:scale-105 hover:border-primary hover:bg-primary hover:text-background active:scale-95 sm:h-10 sm:w-10 md:flex">
             <RiLinkedinBoxLine size={20} />
           </a>
 
-          {/* Mobile Menu Button */}
           <button
             type="button"
             onClick={() => setMenuOpen((open) => !open)}
@@ -105,31 +98,27 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
-          <div
-            className="absolute left-0 right-0 top-[calc(100%+8px)] rounded-2xl bg-surface/95 p-4 shadow-2xl backdrop-blur-xl md:hidden">
+          <div className="absolute left-0 right-0 top-[calc(100%+8px)] rounded-2xl bg-surface/95 p-4 shadow-2xl backdrop-blur-xl md:hidden">
             <div className="flex flex-col gap-2">
-              {/* Links */}
               <a
                 href="#home"
                 onClick={closeMenu}
-                className=" rounded-xl bg-background/80 px-4 py-3 text-sm font-medium text-text transition-all duration-300 hover:bg-primary hover:text-background sm:text-base">
+                className="rounded-xl bg-background/80 px-4 py-3 text-sm font-medium text-text transition-all duration-300 hover:bg-primary hover:text-background sm:text-base">
                 Home
               </a>
 
               <a
                 href="#about"
                 onClick={closeMenu}
-                className="
-                  rounded-xl bg-background/80 px-4 py-3 text-sm font-medium text-text transition-all duration-300 hover:bg-primary hover:text-background sm:text-base">
+                className="rounded-xl bg-background/80 px-4 py-3 text-sm font-medium text-text transition-all duration-300 hover:bg-primary hover:text-background sm:text-base">
                 About
               </a>
 
               <a
                 href="#skills"
                 onClick={closeMenu}
-                className=" rounded-xl bg-background/80 px-4 py-3 text-sm font-medium text-text transition-all duration-300 hover:bg-primary hover:text-background sm:text-base">
+                className="rounded-xl bg-background/80 px-4 py-3 text-sm font-medium text-text transition-all duration-300 hover:bg-primary hover:text-background sm:text-base">
                 Skills
               </a>
 
@@ -140,10 +129,8 @@ const Navbar = () => {
                 Projects
               </a>
 
-              {/* Divider */}
               <div className="my-2 h-px bg-secondary/50" />
 
-              {/* Contact */}
               <a
                 href="#contact"
                 onClick={closeMenu}
@@ -151,14 +138,13 @@ const Navbar = () => {
                 Contact Me
               </a>
 
-              {/* Social Links */}
-              <div className="mt-1 flex items-center justify-center gap-3">
+              <div className="mt-2 flex items-center justify-center gap-3">
                 <a
                   href="https://github.com/Mannsoni8"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-secondary bg-background text-text transition-all duration-300 hover:border-primary hover:bg-primary hover:text-background ">
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-secondary bg-background text-text transition-all duration-300 hover:border-primary hover:bg-primary hover:text-background">
                   <RiGithubLine size={20} />
                 </a>
 
