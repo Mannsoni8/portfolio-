@@ -9,7 +9,8 @@ const About = () => {
   return (
     <section
       id="about"
-      className="about-section relative overflow-hidden bg-background px-6 py-24 sm:py-28 md:py-32">
+      className="about-section relative overflow-hidden bg-background px-6 py-24 sm:py-28 md:py-32"
+    >
       <div className="mx-auto grid w-full max-w-7xl items-center gap-16 md:grid-cols-2">
         <div>
           <p className="about-label mb-4 font-semibold uppercase tracking-[0.25em] text-primary">
@@ -43,7 +44,8 @@ const About = () => {
           <div className="about-text mt-8">
             <a
               href="#projects"
-              className="inline-block rounded-full bg-primary px-7 py-3 font-bold text-background transition-all duration-300 hover:scale-105 hover:bg-text hover:text-background active:scale-95">
+              className="inline-block rounded-full bg-primary px-7 py-3 font-bold text-background transition-all duration-300 hover:scale-105 hover:bg-text hover:text-background active:scale-95"
+            >
               Explore My Work
             </a>
           </div>

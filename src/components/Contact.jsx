@@ -10,7 +10,8 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="contact-section relative flex min-h-screen items-center overflow-hidden bg-background px-6 py-24 sm:py-28 md:py-32">
+      className="contact-section relative flex min-h-screen items-center overflow-hidden bg-background px-6 py-24 sm:py-28 md:py-32"
+    >
       <div className="contact-circle absolute -right-20 -top-20 h-80 w-80 rounded-full bg-secondary/50" />
 
       <div className="contact-circle absolute -bottom-32 -left-20 h-96 w-96 rounded-full bg-surface" />
@@ -37,7 +38,8 @@ const Contact = () => {
           <div className="contact-links mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <a
               href="mailto:mannsoni4352@gmail.com"
-              className="rounded-full bg-primary px-7 py-4 text-center font-bold text-background transition-all duration-300 hover:scale-105 hover:bg-text hover:text-background active:scale-95">
+              className="rounded-full bg-primary px-7 py-4 text-center font-bold text-background transition-all duration-300 hover:scale-105 hover:bg-text hover:text-background active:scale-95"
+            >
               Email Me →
             </a>
 
@@ -45,7 +47,8 @@ const Contact = () => {
               href="https://github.com/Mannsoni8"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 rounded-full border-2 border-primary px-7 py-4 font-bold text-primary transition-all duration-300 hover:bg-primary hover:text-background">
+              className="flex items-center justify-center gap-2 rounded-full border-2 border-primary px-7 py-4 font-bold text-primary transition-all duration-300 hover:bg-primary hover:text-background"
+            >
               GitHub
               <RiGithubFill size={20} />
             </a>
@@ -54,7 +57,8 @@ const Contact = () => {
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 rounded-full border-2 border-primary px-7 py-4 font-bold text-primary transition-all duration-300 hover:bg-primary hover:text-background">
+              className="flex items-center justify-center gap-2 rounded-full border-2 border-primary px-7 py-4 font-bold text-primary transition-all duration-300 hover:bg-primary hover:text-background"
+            >
               LinkedIn
               <RiLinkedinBoxFill size={20} />
             </a>

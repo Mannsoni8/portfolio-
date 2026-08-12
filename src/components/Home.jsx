@@ -9,7 +9,8 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen items-center overflow-hidden bg-background px-6 pt-28">
+      className="relative flex min-h-screen items-center overflow-hidden bg-background px-6 pt-28"
+    >
       <div className="hero-circle absolute right-[15%] top-[20%] h-24 w-24 rounded-full bg-secondary/70" />
 
       <div className="hero-circle absolute bottom-[20%] right-[30%] h-16 w-16 rounded-full bg-primary/80" />
@@ -38,13 +39,15 @@ const Home = () => {
           <div className="hero-buttons mt-8 flex flex-wrap gap-4">
             <a
               href="#projects"
-              className="rounded-full bg-primary px-7 py-3 font-bold text-background transition-all duration-300 hover:scale-105 hover:bg-text active:scale-95">
+              className="rounded-full bg-primary px-7 py-3 font-bold text-background transition-all duration-300 hover:scale-105 hover:bg-text active:scale-95"
+            >
               View Projects
             </a>
 
             <a
               href="#contact"
-              className="rounded-full border-2 border-primary px-7 py-3 font-bold text-primary transition-all duration-300 hover:bg-primary hover:text-background">
+              className="rounded-full border-2 border-primary px-7 py-3 font-bold text-primary transition-all duration-300 hover:bg-primary hover:text-background"
+            >
               Contact Me
             </a>
           </div>
