@@ -17,8 +17,7 @@ const Projects = () => {
     <section
       ref={sectionRef}
       id="projects"
-      className="projects-section relative overflow-hidden bg-background px-6 py-24 md:py-0"
-    >
+      className="projects-section relative overflow-hidden bg-background px-6 py-24 md:py-0">
       <div className="absolute left-6 top-10 z-10 md:left-12">
         <p className="font-semibold uppercase tracking-[0.25em] text-primary">
           Selected Work
@@ -31,13 +30,11 @@ const Projects = () => {
 
       <div
         ref={trackRef}
-        className="flex flex-col gap-8 pt-32 md:flex-row md:h-screen md:w-max md:items-center md:gap-12 md:px-12"
-      >
+        className="flex flex-col gap-8 pt-32 md:flex-row md:h-screen md:w-max md:items-center md:gap-12 md:px-12">
         {projects.map((project) => (
           <article
             key={project.number}
-            className="project-card relative mx-auto flex w-full max-w-3xl flex-col justify-between overflow-hidden rounded-[2rem] bg-surface p-8 shadow-2xl md:h-[70vh] md:w-[65vw] md:p-12"
-          >
+            className="project-card relative mx-auto flex w-full max-w-3xl flex-col justify-between overflow-hidden rounded-[2rem] bg-surface p-8 shadow-2xl md:h-[70vh] md:w-[65vw] md:p-12">
             <span className="font-baby text-6xl font-black text-primary/20 md:text-8xl">
               {project.number}
             </span>
@@ -48,16 +45,15 @@ const Projects = () => {
                 <span className="text-primary">.</span>
               </h3>
 
-              <p className="mt-6 max-w-xl text-base leading-7 text-text/70 md:text-lg">
+              <p className="mt-2 max-w-xl text-base leading-7 text-text/70 md:text-lg">
                 {project.description}
               </p>
 
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-5 flex flex-wrap gap-3">
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-text"
-                  >
+                    className="rounded-full bg-secondary px-4 py-2 text-sm font-semibold text-text">
                     {tech}
                   </span>
                 ))}
@@ -67,8 +63,7 @@ const Projects = () => {
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-block rounded-full bg-primary px-6 py-3 font-bold text-background transition-all duration-300 hover:scale-105 hover:bg-text active:scale-95"
-              >
+                className="mt-5 mb-2 inline-block rounded-full bg-primary px-6 py-3 font-bold text-background transition-all duration-300 hover:scale-105 hover:bg-text active:scale-95">
                 View Project →
               </a>
             </div>
