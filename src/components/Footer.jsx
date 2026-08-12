@@ -7,7 +7,7 @@ import {
 const Footer = () => {
   return (
     <footer className="border-t border-secondary/40 bg-background px-6 py-10">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 md:flex-row">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 text-center md:flex-row md:text-left">
         <a
           href="#home"
           className="font-baby text-3xl font-black tracking-tight text-text">

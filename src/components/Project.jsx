@@ -8,6 +8,7 @@ const Projects = () => {
 
   useEffect(() => {
     if (!sectionRef.current || !trackRef.current) return;
+    if (window.innerWidth < 768) return;
 
     projectAni(sectionRef.current, trackRef.current);
   }, []);
@@ -16,7 +17,7 @@ const Projects = () => {
     <section
       ref={sectionRef}
       id="projects"
-      className="projects-section relative h-screen overflow-hidden bg-background">
+      className="projects-section relative overflow-hidden bg-background px-6 py-24 md:py-0">
       <div className="absolute left-6 top-10 z-10 md:left-12">
         <p className="font-semibold uppercase tracking-[0.25em] text-primary">
           Selected Work
@@ -29,11 +30,11 @@ const Projects = () => {
 
       <div
         ref={trackRef}
-        className="flex h-full w-max items-center gap-8 px-6 pt-24 md:gap-12 md:px-12">
+        className="flex flex-col gap-8 pt-32 md:flex-row md:h-screen md:w-max md:items-center md:gap-12 md:px-12">
         {projects.map((project) => (
           <article
             key={project.number}
-            className="project-card relative flex h-[65vh] w-[80vw] shrink-0 flex-col justify-between overflow-hidden rounded-[2rem] bg-surface p-8 shadow-2xl md:h-[70vh] md:w-[65vw] md:p-12">
+            className="project-card relative mx-auto flex w-full max-w-3xl flex-col justify-between overflow-hidden rounded-[2rem] bg-surface p-8 shadow-2xl md:h-[70vh] md:w-[65vw] md:p-12">
             <span className="font-baby text-6xl font-black text-primary/20 md:text-8xl">
               {project.number}
             </span>
@@ -74,7 +75,6 @@ const Projects = () => {
 
       <div className="absolute bottom-8 right-8 z-10 hidden items-center gap-3 text-sm font-bold text-text md:flex">
         <span>SCROLL</span>
-
         <span className="text-2xl text-primary">→</span>
       </div>
     </section>

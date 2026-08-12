@@ -22,11 +22,11 @@ const Home = () => {
             Hello, I'm
           </p>
 
-          <h1 className="hero-title font-baby text-6xl font-black leading-none tracking-tight text-text sm:text-7xl md:text-8xl">
+          <h1 className="hero-title font-baby text-5xl font-black leading-none tracking-tight text-text sm:text-6xl md:text-8xl">
             MANN<span className="text-primary">.</span>
           </h1>
 
-          <h2 className="hero-description mt-6 max-w-xl text-2xl font-semibold text-text sm:text-3xl">
+          <h2 className="hero-description mt-6 max-w-xl text-2xl font-semibold text-text sm:text-3xl md:text-4xl">
             Full Stack Developer
           </h2>
 
@@ -51,18 +51,20 @@ const Home = () => {
         </div>
 
         <div className="hero-visual relative flex items-center justify-center">
-          <div className="relative h-[350px] w-[350px] sm:h-[450px] sm:w-[450px]">
+          <div className="relative mx-auto h-[320px] w-full max-w-[320px] sm:h-[400px] sm:max-w-[400px] md:h-[450px] md:max-w-[450px]">
             <div className="absolute inset-10 rounded-full border-2 border-primary/40" />
 
-            <div className="hero-circle absolute right-4 top-10 h-28 w-28 rounded-full bg-secondary" />
+            <div className="hero-circle absolute right-4 top-10 h-24 w-24 rounded-full bg-secondary sm:h-28 sm:w-28" />
 
-            <div className="hero-circle absolute bottom-10 left-8 h-24 w-24 rounded-full bg-primary" />
+            <div className="hero-circle absolute bottom-10 left-8 h-20 w-20 rounded-full bg-primary sm:h-24 sm:w-24" />
 
-            <div className="hero-circle absolute bottom-20 right-12 h-20 w-20 rounded-full bg-text/20" />
+            <div className="hero-circle absolute bottom-20 right-12 h-16 w-16 rounded-full bg-text/20 sm:h-20 sm:w-20" />
 
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="flex h-48 w-48 items-center justify-center rounded-full border border-primary/20 bg-surface/80 shadow-xl backdrop-blur-md">
-                <span className="font-baby text-5xl text-primary">DEV</span>
+              <div className="flex h-40 w-40 items-center justify-center rounded-full border border-primary/20 bg-surface/80 shadow-xl backdrop-blur-md sm:h-52 sm:w-52">
+                <span className="font-baby text-4xl text-primary sm:text-5xl">
+                  DEV
+                </span>
               </div>
             </div>
           </div>

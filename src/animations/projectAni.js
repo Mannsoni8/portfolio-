@@ -4,6 +4,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const projectAni = (section, track) => {
+  if (typeof window === "undefined" || window.innerWidth < 768) {
+    return null;
+  }
+
   const getScrollAmount = () => {
     return track.scrollWidth - window.innerWidth;
   };

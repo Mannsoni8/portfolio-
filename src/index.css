@@ -25,3 +25,15 @@
   --color-secondary: #3a506b;
   --color-text: #f5f3e7;
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--color-background);
+  }
+}
